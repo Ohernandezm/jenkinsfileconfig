@@ -1,8 +1,7 @@
 String branchName = env.BRANCH_NAME
 String gitCredentials = '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'
 String repoUrl = 'git@github.com:Ohernandezm/jenkinsfileconfig.git'
-
-node {
+ 
     stages {
         stage('Clone') {
                 steps {
@@ -21,5 +20,4 @@ node {
                     build job: 'Jenkinsfile', parameters: [ ]
                 }
         }
-    }
-}
+    } 
