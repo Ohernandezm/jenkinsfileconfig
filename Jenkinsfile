@@ -2,11 +2,8 @@ String branchName = env.BRANCH_NAME
 String gitCredentials = "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"
 String repoUrl = "git@github.com:Ohernandezm/jenkinsfileconfig.git"
 
-pipeline {
-    agent any
-    stages {
-        stage('clone repos') {
-          // Start Stages
+node {
+  // Start Stages
   stage('Clone') {
       // Clones the repository from the current branch name
       echo 'Make the output directory'
