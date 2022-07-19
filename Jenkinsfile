@@ -7,7 +7,7 @@ String repoUrl = 'git@github.com:Ohernandezm/jenkinsfileconfig.git'
                 steps {
                 // Clones the repository from the current branch name
                 echo 'Make the output directory' 
-                    git branch: branchName, credentialsId:     gitCredentials, url: repoUrl 
+                    "sh git clone  https://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@github.com/Ohernandezm/devops-products-service.git"
                 }
         }
         stage ('Invoke_pipelineA') {
