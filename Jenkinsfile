@@ -1,20 +1,22 @@
+String branchName = env.BRANCH_NAME
+String gitCredentials = "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"
+String repoUrl = "git@github.com:Ohernandezm/jenkinsfileconfig.git"
+
 pipeline {
     agent any
     stages {
         stage('clone repos') {
-            steps {
-                // clones repo1 in ${WORKSPACE}/repo1
-                dir('repo1') {
-                    checkout([
-                    $class: 'GitSCM',
-                    branches: [[name: "$GIT_BRANCH" ]],
-                    extensions: [[$class: 'PruneStaleBranch']],
-                    userRemoteConfigs: [[
-                        url: 'git@github.com:Ohernandezm/devops-products-service.git',
-                    ]]
-                ])
-                }
-            }
+          // Start Stages
+  stage('Clone') {
+      // Clones the repository from the current branch name
+      echo 'Make the output directory'
+      sh 'mkdir -p build'
+
+      echo 'Cloning files from (branch: "' + branchName + '" )'
+      dir('build') {
+          git branch: branchName, credentialsId: 	gitCredentials, url: repoUrl
+      }     
+  }  
         }
             stage ('Invoke_pipelineA') {
                 steps {
