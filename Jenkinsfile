@@ -2,9 +2,7 @@ pipeline {
     agent any
     stages {
         stage('clone repos') {
-            steps {
-                cleanWs()
-
+            steps { 
                 // clones repo1 in ${WORKSPACE}/repo1
                 dir('repo1') {
                     checkout([
