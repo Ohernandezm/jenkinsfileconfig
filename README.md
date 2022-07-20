@@ -47,6 +47,11 @@ Ejecucion de imagen creada:
 
 Prueba endpoints __Postman__
 
+* metodo -> ``POST``
+* baseUrl -> ``localhost:8084/payments/1``
+
+![image](https://user-images.githubusercontent.com/12714366/179898158-9f30aff7-f349-40d8-8203-e4f4ff255da3.png)
+
 
 
 ## Products Service:
@@ -71,6 +76,11 @@ Ejecucion de imagen creada:
 ![image](https://user-images.githubusercontent.com/12714366/179897457-e5578ac9-3878-4080-adce-cd4d74cd203b.png)
 
 Prueba endpoints __Postman__ 
+
+* metodo -> ``GET``
+* baseUrl -> ``localhost:8083/products/123``
+
+![image](https://user-images.githubusercontent.com/12714366/179897911-f4be06ed-e3ff-4341-8687-b8d5d41be048.png)
 
 
 ## Shipping Service:
@@ -97,6 +107,8 @@ Ejecucion de imagen creada:
 
 Prueba endpoints __Postman__ 
 
+* metodo -> POST
+* baseUrl -> 
 
 
 ## Orders Service:
@@ -120,3 +132,8 @@ Ejecucion de imagen creada:
 ![image](https://user-images.githubusercontent.com/12714366/179897320-df6d9115-6c07-465d-b7f6-d0068db4a716.png)
 
 Prueba endpoints __Postman__ 
+
+* metodo -> POST
+* baseUrl -> 
+
+
