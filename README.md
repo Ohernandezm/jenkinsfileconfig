@@ -11,15 +11,15 @@ Para cada microservicio se realizó los siguientes pasos:
 
 1. Prueba de compilar la aplicación con __Maven__.
 
-&nbsp; `` mvn -f pom.xml clean package ``
+- `` mvn -f pom.xml clean package ``
  
 2. Construimos la imagen del contenedor con __Docker__
 
-&nbsp; `` docker build -t nombreservice . ``
+- `` docker build -t nombreservice . ``
  
 3. Levantar contenedor
 
-&nbsp; `` docker run -d -p 8080:8080 --name orders nombreservice  ``
+- `` docker run -d -p 8080:8080 --name orders nombreservice  ``
 
 4. Probar endpoints en __Postman__
 
@@ -27,18 +27,66 @@ Para cada microservicio se realizó los siguientes pasos:
 ## Payments Service:
 
 Compilado de aplicación:
-mvn -f pom.xml clean package
+``mvn -f pom.xml clean package``
 ![image](https://user-images.githubusercontent.com/12714366/179889261-6cb80eb9-a964-4047-91ef-8a9fb7dfef13.png)
 
 
 Creación de imagen docker:
-docker build -t paymentsservice .
+``docker build -t paymentsservice .``
 ![image](https://user-images.githubusercontent.com/12714366/179889306-4498d210-0c31-4d87-bb02-dc2ce5cba4b6.png)
 
 
 Ejecucion de imagen creada:
-docker run -d -p 8080:8080 --name payments paymentsservice
+``docker run -d -p 8080:8080 --name payments paymentsservice``
 
-Prueba endpoints
+Prueba endpoints __Postman 
 
 
+
+## Products Service:
+
+Compilado de aplicación:
+``mvn -f pom.xml clean package`` 
+
+
+Creación de imagen docker:
+``docker build -t productsservice .`` 
+
+
+Ejecucion de imagen creada:
+``docker run -d -p 8080:8080 --name payments productsservice``
+
+Prueba endpoints __Postman 
+
+
+## Shipping Service:
+
+Compilado de aplicación:
+``mvn -f pom.xml clean package`` 
+
+
+Creación de imagen docker:
+``docker build -t shippingssservice .`` 
+
+
+Ejecucion de imagen creada:
+``docker run -d -p 8080:8080 --name payments shippingssservice``
+
+Prueba endpoints __Postman 
+
+
+
+## Orders Service:
+
+Compilado de aplicación:
+``mvn -f pom.xml clean package`` 
+
+
+Creación de imagen docker:
+``docker build -t ordersservice .`` 
+
+
+Ejecucion de imagen creada:
+``docker run -d -p 8080:8080 --name payments ordersservice``
+
+Prueba endpoints __Postman 
