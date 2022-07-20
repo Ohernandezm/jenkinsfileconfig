@@ -37,12 +37,13 @@ Creación de imagen docker:
 
 ``docker build -t paymentsservice .``
 
-
-
+![image](https://user-images.githubusercontent.com/12714366/179897538-82f1046f-d53c-4b4e-93bc-ac882b29355d.png)
 
 Ejecucion de imagen creada:
 
 ``docker run -d -p 8080:8080 --name payments paymentsservice``
+
+![image](https://user-images.githubusercontent.com/12714366/179897584-bc535965-6c95-4efa-9d14-0b0fe648e26c.png)
 
 Prueba endpoints __Postman__
 
@@ -61,10 +62,13 @@ Creación de imagen docker:
 
 ``docker build -t productsservice .`` 
 
+![image](https://user-images.githubusercontent.com/12714366/179897417-cd3e20de-22f2-4815-8f1d-e0dff530aa18.png)
 
 Ejecucion de imagen creada:
 
 ``docker run -d -p 8080:8080 --name payments productsservice``
+
+![image](https://user-images.githubusercontent.com/12714366/179897457-e5578ac9-3878-4080-adce-cd4d74cd203b.png)
 
 Prueba endpoints __Postman__ 
 
@@ -82,10 +86,14 @@ Creación de imagen docker:
 
 ``docker build -t shippingssservice .`` 
 
+![image](https://user-images.githubusercontent.com/12714366/179896991-1c73a6eb-1810-40bd-b8e9-23e4e3597e15.png)
+
 
 Ejecucion de imagen creada:
 
 ``docker run -d -p 8080:8080 --name payments shippingssservice``
+
+![image](https://user-images.githubusercontent.com/12714366/179897253-90c64cc8-d861-4312-bf56-9f90a99736f8.png)
 
 Prueba endpoints __Postman__ 
 
@@ -103,12 +111,12 @@ Creación de imagen docker:
 
 ``docker build -t ordersservice .`` 
 
-
+![image](https://user-images.githubusercontent.com/12714366/179897129-5df60a76-16cf-4b8a-8522-0ae1e8ca0a52.png)
 
 Ejecucion de imagen creada:
 
 ``docker run -d -p 8080:8080 --name payments ordersservice``
 
-
+![image](https://user-images.githubusercontent.com/12714366/179897320-df6d9115-6c07-465d-b7f6-d0068db4a716.png)
 
 Prueba endpoints __Postman__ 
