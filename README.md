@@ -80,7 +80,7 @@ Prueba endpoints __Postman__
 * metodo -> ``GET``
 * baseUrl -> ``localhost:8083/products/123``
 
-![image](https://user-images.githubusercontent.com/12714366/179897911-f4be06ed-e3ff-4341-8687-b8d5d41be048.png)
+![image](https://user-images.githubusercontent.com/12714366/179899680-fed6e2f8-8fe3-476f-bfc8-0edd976b8d9b.png)
 
 
 ## Shipping Service:
